@@ -15,7 +15,6 @@
     "disallowYodaConditions": true,
     "disallowTrailingComma": true,
     "disallowTrailingWhitespace": true,
-    "esnext": true,
     "requireBlocksOnNewline": true,
     "requireCamelCaseOrUpperCaseIdentifiers": "ignoreProperties",
     "requireCommaBeforeLineBreak": true,
