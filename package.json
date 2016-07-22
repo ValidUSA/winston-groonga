@@ -4,7 +4,9 @@
   "description": "A Winston transport for Groonga Database",
   "main": "./lib/winston-groonga",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublish": "npm run lint",
+    "lint": "jshint lib/*.js && jscs lib/*.js",
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -21,15 +23,13 @@
   "author": "ValID USA",
   "license": "MIT",
   "dependencies": {
-    "cycle": "^1.0.3",
-    "lodash": "^4.11.2",
     "node-uuid": "^1.4.3",
     "request": "^2.72.0"
   },
   "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-contrib-jshint": "^0.11.0",
-    "grunt-jscs": "^2.8.0",
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3",
+    "nock": "^8.0.0",
     "winston": "^2.2.0"
   },
   "engines": {
