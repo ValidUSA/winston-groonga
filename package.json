@@ -5,7 +5,7 @@
   "main": "./lib/winston-groonga",
   "scripts": {
     "prepublish": "npm run lint",
-    "lint": "jshint lib/*.js && jscs lib/*.js",
+    "lint": "node_modules/.bin/jshint lib/*.js && node_modules/.bin/jscs lib/*.js",
     "test": "mocha"
   },
   "repository": {
@@ -28,6 +28,8 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
+    "jscs": "^3.0.7",
+    "jshint": "^2.9.2",
     "mocha": "^2.5.3",
     "nock": "^8.0.0",
     "winston": "^2.2.0"
