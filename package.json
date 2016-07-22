@@ -5,7 +5,7 @@
   "main": "./lib/winston-groonga",
   "scripts": {
     "prepublish": "npm run lint",
-    "lint": "node_modules/.bin/jshint lib/*.js && node_modules/.bin/jscs lib/*.js",
+    "lint": "jshint lib/winston-groonga.js && jscs lib/winston-groonga.js",
     "test": "mocha"
   },
   "repository": {
